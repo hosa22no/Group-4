@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Futurama Characters</title>
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <h1><a href="episodes.html">Episodes</a></h1>
+    </header>
+
+
+    <h1>\.....Characters...../</h1>
+    <h2>Add, uppdate or delete character</h2>
+    <div class="container">
+      <!-- Form for adding, updating and deleting a new character -->
+     
+        <form id="characterForm">
+          
+          <label for="characterName">Character Name:</label>
+          <input type="text" id="characterName" name="characterName" required />
+          <label for="homePlanet">Home Planet:</label>
+          <input type="text" id="homePlanet" name="homePlanet" />
+          <div id="buttons">
+          <button type="submit" id="addCharacterBtn">Add Character</button>
+          <button type="submit" id="updateCharacterBtn">Update Character</button>
+          <button type="submit" id="deleteBtn">Delete Character</button>
+        </form>
+      
+    </div>
+      <!-- Container to display characters -->
+      <div class="container">
+      <h1>Futurama</h1>
+      <div id="charactersContainer"></div>
+      <div id="characters">
+        <ul id="charactersList"></ul>
+    </div>
+
+      <div id="errorMessages"></div>
+        </div>
+    
+    <script src="scripts/kscript.js"></script>
+    <script src="scripts/jscript.js"></script>
+    <script src="scripts/character.js"></script>
+    <script src="scripts/episode.js"></script>
+    <script src="scripts/localstorage.js"></script>
+
+</body>
+</html>
